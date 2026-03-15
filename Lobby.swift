@@ -1,13 +1,14 @@
 import DataDetection
+
 class Game {
     let title: String
     let date: Date
-    let playersCount: Int
+    var players: [String]
 
-    init(title: String, date: Date, playersCount: Int) {
+    init(title: String, date: Date, players: [String] = []) {
         self.title = title
         self.date = date
-        self.playersCount = playersCount
+        self.players = players
     }
 }
 
